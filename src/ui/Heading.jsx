@@ -21,4 +21,8 @@ const Heading = styled.h1`
     `}
 `;
 
+Heading.defaultProps = {
+  as: "h1",
+};
+
 export default Heading;
