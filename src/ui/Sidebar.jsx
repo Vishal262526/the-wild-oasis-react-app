@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Heading from "./Heading";
+import MainNav from "./MainNav";
 
 const StyledSidebar = styled.aside`
   background-color: var(--color-grey-0);
@@ -7,12 +8,17 @@ const StyledSidebar = styled.aside`
   border-right: 1px solid var(--color-grey-100);
 
   grid-row: 1 / -1;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
 `;
 
 const Sidebar = () => {
   return (
     <StyledSidebar>
-      <Heading>Sidebar</Heading>
+      <Heading as="h3" >The Wild Oasis</Heading>
+      <MainNav />
     </StyledSidebar>
   );
 };
